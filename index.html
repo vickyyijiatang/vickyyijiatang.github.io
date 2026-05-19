@@ -275,15 +275,13 @@
       </div>
     </div>
 
-    <div class="project-card">
+    <div class="project-card" onclick="openLightbox('ethnic-dance')" style="cursor:pointer;">
       <div class="project-thumb">
-        <div class="project-thumb-placeholder">
-          <svg viewBox="0 0 200 150" fill="none"><path d="M50 130 Q80 60 100 40 Q120 20 150 50 Q170 70 140 110" stroke="#1a1714" stroke-width="1" stroke-linecap="round" opacity="0.5"/></svg>
-        </div>
+        <img src="past-ethnic-dance-1.jpg" alt="民族舞 1">
       </div>
       <div class="project-info">
-        <p class="project-title">民族舞 / National Identity</p>
-        <p class="project-meta">Illustration · Performance · Pre-RCA</p>
+        <p class="project-title">民族舞 / National Identity <span style="font-family:'DM Mono',monospace;font-size:9px;color:var(--dust);margin-left:0.5rem;">↗ click to read</span></p>
+        <p class="project-meta">Illustration · Collage · Pre-RCA</p>
       </div>
     </div>
 
@@ -395,6 +393,31 @@
   <span class="footer-note">Improvised Moving–Drawing</span>
   <span class="footer-note">唐藝嘉</span>
 </footer>
+
+<!-- LIGHTBOX: 民族舞 -->
+<div class="lightbox-overlay" id="lb-ethnic-dance">
+  <button class="lightbox-close" onclick="closeLightbox('ethnic-dance')">✕ Close</button>
+  <div class="lightbox-inner">
+    <h2 class="lightbox-title">民族舞 / <em>National Identity</em></h2>
+    <p class="lightbox-meta">Illustration · Collage · Pre-RCA</p>
+    <div class="lightbox-images">
+      <img src="past-ethnic-dance-1.jpg" alt="民族舞 1">
+      <img src="past-ethnic-dance-2.jpg" alt="民族舞 2">
+      <img src="past-ethnic-dance-3.jpg" alt="民族舞 3">
+      <img src="past-ethnic-dance-4.jpg" alt="民族舞 4">
+      <img src="past-ethnic-dance-5.jpg" alt="民族舞 5">
+      <img src="past-ethnic-dance-6.jpg" alt="民族舞 6">
+      <img src="past-ethnic-dance-7.jpg" alt="民族舞 7">
+      <img src="past-ethnic-dance-8.jpg" alt="民族舞 8">
+      <img src="past-ethnic-dance-9.jpg" alt="民族舞 9">
+      <img src="past-ethnic-dance-10.jpg" alt="民族舞 10">
+    </div>
+    <div class="lightbox-text">
+      <p>China's cultural propaganda presents a seemingly harmonious image of its many nationalities — ethnic minority folk dances performed, standardised, and interpreted through a Han lens.</p>
+      <p>This project extracts the motions of these standardised ethnic dances and reconstructs them through illustration and collage — paper cuts, constrained gestures, prescribed forms. In making visible the choreography of national identity, the work asks: whose body is dancing, and for whom?</p>
+    </div>
+  </div>
+</div>
 
 <!-- LIGHTBOX: 男子气概 -->
 <div class="lightbox-overlay" id="lb-masculinity">
