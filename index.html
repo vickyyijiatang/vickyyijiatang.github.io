@@ -42,9 +42,6 @@
   .btn-ghost { font-family:'DM Mono',monospace; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:var(--ghost); text-decoration:none; border-bottom:1px solid var(--dust); padding-bottom:2px; transition:color 0.3s,border-color 0.3s; }
   .btn-ghost:hover { color:var(--ink); border-color:var(--ink); }
   .hero-right { position:relative; overflow:hidden; background:var(--paper2); }
-  .hero-drawing { position:absolute; inset:0; display:flex; align-items:center; justify-content:center; }
-  .hero-drawing svg { width:90%; height:90%; opacity:0.5; }
-  .hero-caption { position:absolute; bottom:2rem; right:2.5rem; font-family:'DM Mono',monospace; font-size:9px; letter-spacing:0.12em; text-transform:uppercase; color:var(--dust); }
 
   .marquee-wrap { border-top:1px solid var(--line); border-bottom:1px solid var(--line); overflow:hidden; padding:1rem 0; }
   .marquee { display:flex; gap:4rem; animation:marquee 28s linear infinite; white-space:nowrap; }
@@ -74,7 +71,6 @@
   .project-gallery img:not(:first-child) { display:none; }
   .project-card-wide:hover .project-gallery img:first-child { transform:scale(1.03); }
 
-  /* LIGHTBOX */
   .lightbox-overlay {
     display:none; position:fixed; inset:0; z-index:500;
     background:rgba(245,242,236,0.98); overflow-y:auto;
@@ -168,18 +164,7 @@
     </div>
   </div>
   <div class="hero-right">
-    <div class="hero-drawing">
-      <svg viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M80 400 Q120 200 200 150 Q280 100 320 80" stroke="#1a1714" stroke-width="1" stroke-linecap="round"/>
-        <path d="M60 380 Q140 300 180 240 Q220 180 260 120 Q300 70 330 50" stroke="#1a1714" stroke-width="0.5" stroke-linecap="round" opacity="0.5"/>
-        <path d="M200 450 Q210 350 230 280 Q250 210 240 140" stroke="#1a1714" stroke-width="1.5" stroke-linecap="round"/>
-        <path d="M150 420 C160 380 180 360 200 300 C220 240 210 180 220 120" stroke="#1a1714" stroke-width="0.7" stroke-linecap="round" opacity="0.7"/>
-        <ellipse cx="200" cy="260" rx="60" ry="90" stroke="#1a1714" stroke-width="0.4" opacity="0.2"/>
-        <circle cx="200" cy="150" r="3" fill="#1a1714" opacity="0.4"/>
-        <circle cx="170" cy="350" r="2" fill="#1a1714" opacity="0.25"/>
-      </svg>
-    </div>
-    <p class="hero-caption">Replace with your image</p>
+    <img src="hero.jpg" alt="Drawing" style="width:100%;height:100%;object-fit:cover;display:block;">
   </div>
 </section>
 
@@ -255,7 +240,6 @@
   </div>
   <div class="project-grid">
 
-    <!-- 逼婚 — clickable lightbox -->
     <div class="project-card project-card-wide" onclick="openLightbox('forced-marriage')">
       <div class="project-gallery">
         <img src="past-forced-marriage-1.jpg" alt="逼婚 1">
@@ -351,6 +335,7 @@
 
   </div>
 </section>
+
 <section id="future" class="reveal">
   <div class="section-header">
     <h2 class="section-time">未来<br><em>Coming</em></h2>
@@ -371,7 +356,6 @@
   </div>
 </section>
 
-<!-- ABOUT -->
 <section id="about" class="reveal">
   <div>
     <p class="about-label">About</p>
@@ -394,7 +378,6 @@
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="reveal">
   <p class="contact-label">Get in touch</p>
   <h2 class="contact-title">Let's <em>connect</em></h2>
